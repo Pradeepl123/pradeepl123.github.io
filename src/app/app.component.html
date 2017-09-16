@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<main class="l-main l-sample-app">
+  <div>
+    <div class="main-container">
+      <div class="list">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+
+  <ul>
+    <li *ngFor="let todo of (courses$  | async)" [class.done]="courses$ .done">
+      {{ todo.courseListIcon}}
+    </li>
+  </ul>
+
+<h2>Here are some links to help you start: </h2>
+<button (click)="listPush()">list push </button>
+<button (click)="listRemove()">list remove</button>
+<button (click)="listUpdate()">list update</button>
+<button (click)="listRemove()">list </button>
+
+<app-home></app-home>
+     </div>
+  </div>
+</div>
+</main>
